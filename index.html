@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>draggable horizontal scroll</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black select-none  overflow-hidden text-white">
+    <nav class="flex w-full fixed left-0 top-0 z-50">
+      <ul
+        class="flex uppercase gap-2 md:gap-3 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl top-0 p-4 md:p-[2em] flex justify-between w-full items-center"
+      >
+        <li class="font-thin hover:text-gray-300 transition-colors"><a href="/">About me</a></li>
+        <li class="font-thin hover:text-gray-300 transition-colors"><a href="/">Contact</a></li>
+        <li class="font-thin hover:text-gray-300 transition-colors"><a href="/">Services</a></li>
+        <li class="font-thin hover:text-gray-300 transition-colors"><a href="/">Works</a></li>
+      </ul>
+    </nav>
+
+    <div
+      class="wrapper absolute pt-16 md:pt-20 px-2 md:px-4 lg:px-8 gap-4 md:gap-8 lg:gap-[2em] top-0 -z-10 left-0 w-[550vw] md:w-[550vw] h-[85vh] md:h-[90vh] flex"
+    >
+      <div class="bloc-1 w-[100vw] overflow-hidden h-full flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-[2em] relative p-4 md:p-0">
+        <h2 class="w-full md:w-1/2 text-balance max-w-2xl uppercase text-2xl sm:text-3xl md:text-4xl leading-tight">
+          Welcome to my creative universe, where every project tells a unique
+          and professional story
+        </h2>
+
+        <p class="w-full md:w-1/2 px-0 md:px-8 py-4 md:py-8 text-sm sm:text-base md:text-lg leading-relaxed">
+          Passionate designer and developer dedicated to creating exceptional
+          digital experiences. With years of expertise in modern web technologies
+          and creative solutions, I bring visions to life through innovative
+          design and clean code execution.
+        </p>
+      </div>
+
+      <div class="bloc-2 w-[100vw] overflow-hidden h-full flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-[2em] relative p-4 md:p-0">
+        <div class="w-full md:w-1/2 rounded-sm h-48 md:h-auto">
+          <img
+            alt="image-1"
+            src="./image/7.webp"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+        <div class="w-full md:w-1/3 rounded-sm h-48 md:h-auto">
+          <img
+            alt="image-2"
+            src="./image/8.webp"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+        <div class="w-full md:w-1/3 rounded-sm h-48 md:h-auto">
+          <img
+            alt="image-3"
+            src="./image/9.webp"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+      </div>
+      <div class="bloc-3 w-[100vw] overflow-hidden h-full flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-[2em] relative p-4 md:p-0">
+        <h2 class="w-full md:w-1/2 text-balance uppercase text-2xl sm:text-3xl md:text-4xl leading-tight">
+          My skills extend beyond design, combining creativity and technical
+          expertise for exceptional results
+        </h2>
+
+        <p class="w-full md:w-1/4 text-sm sm:text-base md:text-lg leading-relaxed">
+          From conceptualization to deployment, I specialize in crafting
+          responsive websites and applications that combine aesthetic appeal with
+          optimal performance. My approach focuses on user-centered design and
+          cutting-edge development practices.
+        </p>
+      </div>
+      <div class="bloc-4 w-[100vw] overflow-hidden h-full flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-[2em] relative p-4 md:p-0">
+        <div class="w-full md:w-1/3 rounded-sm h-48 md:h-auto">
+          <img
+            alt="image-4"
+            src="./image/5.jpg"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+        <div class="w-full md:w-1/2 rounded-sm h-48 md:h-auto">
+          <img
+            alt="image-5"
+            src="./image/1.jpg"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+         <div class="w-full md:w-1/3 rounded-sm h-48 md:h-auto">
+          <img
+            alt="image-6"
+            src="./image/3.jpg"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+      </div>
+      <div class="bloc-5 w-[100vw] overflow-hidden h-full flex flex-col lg:flex-row gap-4 md:gap-8 lg:gap-[2em] relative p-4 md:p-0">
+        <div class="w-full lg:w-1/2 rounded-sm h-48 lg:h-auto">
+          <img
+            alt="image-7"
+            src="./image/8.webp"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+
+         <div class="w-full lg:w-1/2 flex flex-col justify-center items-center gap-4 text-balance rounded-sm p-4">
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-center">
+            My creative process combines strategic thinking with artistic vision to
+            deliver solutions that not only look stunning but also drive meaningful
+            results for businesses and users alike through thoughtful design.
+          </p>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-center">
+            Each project is an opportunity to push boundaries and explore new
+            possibilities, whether through cutting-edge technology, innovative
+            interaction design, or fresh visual approaches that captivate audiences.
+          </p>
+        </div>
+
+        <div class="w-full lg:w-1/2 rounded-sm h-48 lg:h-auto">
+          <img
+            alt="image-8"
+            src="./image/2.jpg"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="timeline fixed w-full z-10 justify-around items-center py-[1.9em]
+       flex bottom-0 right-0 left-0 w-[100vw] gap-2 md:gap-[2em] flex h-[10vh] bg-black bg-opacity-80 backdrop-blur-sm"
+    >
+      <div class="scroller">
+          <p class="text-xs sm:text-sm md:text-base">[<span class="hover:px-4 md:hover:px-12 transition-all duration-300">Drag</span>]</p>
+      </div>
+    </div>
+
+    <style>
+
+      @font-face {
+        font-family:"Akkurat" ;
+        src: url("./font/Akkurat.ttf");
+      }
+
+      *{
+        font-family: "Akkurat";
+      }
+        
+      .marker {
+        min-width: 1px;
+        height: 100%;
+        background-color: white;
+      }
+      .scroller {
+        width: 1px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        text-transform: uppercase;
+        cursor: pointer;
+        line-height: 120%;
+      }
+      .scroller:active {
+        cursor: grabbing;
+      }
+        .scroller:hover span {
+          padding:0 3rem;
+        }
+     span {
+        transition:all ease .5;
+        font-size: 13px;
+        padding: 0 3em;
+        background-color: black;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          overflow-x: hidden;
+        }
+        
+        .wrapper {
+          height: 75vh;
+        }
+        
+        .scroller span {
+          padding: 0 1.5em;
+          font-size: 11px;
+        }
+        
+        
+        
+        .marker {
+          opacity: 0.6;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .wrapper {
+          height: 70vh;
+          padding-top: 4rem;
+        }
+        
+       
+        
+        .scroller span {
+          padding: 0 1em;
+          font-size: 10px;
+        }
+      }
+
+      @media (hover: none) and (pointer: coarse) {
+        .scroller:hover span {
+          padding: 0 1em;
+        }
+        
+        .scroller:active span {
+          padding: 0 2em;
+        }
+        
+        nav a {
+          padding: 0.5rem;
+          display: block;
+        }
+      }
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .marker {
+          min-width: 0.5px;
+        }
+      }
+
+      @media (max-width: 896px) and (orientation: landscape) {
+        .wrapper {
+          height: 80vh;
+        }
+        
+        .timeline {
+          height: 10vh;
+        }
+        
+        nav {
+          padding: 0.5rem 0;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .timeline {
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
